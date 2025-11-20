@@ -2,7 +2,7 @@
 
 ## ✨ Live Project Demo
 
-[![Live Demo](]
+[![Live Demo] (https://shrutir15.github.io/Cpp-Skill-Matcher-Web-Tool/)
 
 ---
 
