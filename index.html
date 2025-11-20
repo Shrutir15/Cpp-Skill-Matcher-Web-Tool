@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ Performance Skill Matcher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>C++ Performance Skill Matcher</h1>
+        <p>Analyze your skill fit against a job description. The core logic is designed for C++ performance.</p>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <label for="jobSkills">Job Requirements (Comma-separated skills):</label>
+            <textarea id="jobSkills" placeholder="C++, AI, HTML, JavaScript, Git, CSS, OOP"></textarea>
+        </div>
+
+        <div class="input-section">
+            <label for="mySkills">Your Skills (Comma-separated skills):</label>
+            <textarea id="mySkills" placeholder="C++, Python, HTML, CSS, Web Dev, Java"></textarea>
+        </div>
+
+        <div class="input-section">
+            <label for="matchType">Desired Match Type for Role:</label>
+            <select id="matchType">
+                <option value="critical">Critical Skills (Requires >80% Match)</option>
+                <option value="balanced" selected>Balanced Skills (Requires >60% Match)</option>
+                <option value="potential">Potential Role (Requires >40% Match)</option>
+            </select>
+        </div>
+
+        <button onclick="calculateMatch()">Calculate Match Score</button>
+
+        <div class="results-container">
+            <h2>Match Analysis:</h2>
+            <div id="scoreDisplay">-- %</div>
+            <p id="feedbackMessage">Enter skills and click 'Calculate' to see your personalized analysis.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>Built using C++ (Logic) and Full-Stack Web Technologies (UI).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
